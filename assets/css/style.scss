@@ -17,7 +17,7 @@ $kamisma-gold: rgb(176, 132, 7);
 }
 
 .news-alert {
-    padding:3vh 0;
+    padding:4vh 0;
     text-align: center;
     position:fixed;
     z-index:999;
@@ -25,7 +25,8 @@ $kamisma-gold: rgb(176, 132, 7);
     left:2%;
     right:2%;
     color: #3def69;
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight:bold;
     text-shadow: 0 0 20px #48c8ff;
    
 background: rgb(60, 81, 131, 0.99);
