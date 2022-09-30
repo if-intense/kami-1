@@ -12,17 +12,17 @@
 }
 
 .news-alert {
-  padding: 2vh 0;
+  padding: 3vh 0;
   text-align: center;
   position: fixed;
   z-index: 999;
   bottom: 1%;
   left: 2%;
   right: 2%;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  background: #ed8406;
-  background: linear-gradient(135deg, #ed8406 0%, #f5c641 33%, #fce518 66%);
+  color: #3def69;
+  font-size: 1.25em;
+  text-shadow: 0 0 20px #48c8ff;
+  background: rgba(60, 81, 131, 0.99);
   border-radius: 10px;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }

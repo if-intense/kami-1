@@ -17,17 +17,19 @@ $kamisma-gold: rgb(176, 132, 7);
 }
 
 .news-alert {
-    padding:2vh 0;
+    padding:3vh 0;
     text-align: center;
     position:fixed;
     z-index:999;
     bottom:1%;
     left:2%;
     right:2%;
-    color:#fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    background: rgb(237,132,6);
-background: linear-gradient(135deg, rgba(237,132,6,1) 0%, rgba(245,198,65,1) 33%, rgba(252,229,24,1) 66%);
+    color: #3def69;
+    font-size: 1.25em;
+    text-shadow: 0 0 20px #48c8ff;
+   
+background: rgb(60, 81, 131, 0.99);
+// background: linear-gradient(135deg, rgba(15,47,145,1) 0%, rgba(127,152,210,1) 66%);
     border-radius: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }
