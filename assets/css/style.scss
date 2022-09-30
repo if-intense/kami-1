@@ -17,22 +17,35 @@ $kamisma-gold: rgb(176, 132, 7);
 }
 
 .news-alert {
-    padding:4vh 0;
+    padding:4vh 2vw;
     text-align: center;
-    position:fixed;
-    z-index:999;
-    bottom:1%;
-    left:2%;
-    right:2%;
-    color: #3def69;
+    
     font-size: 1.5em;
     font-weight:bold;
     text-shadow: 0 0 20px #48c8ff;
    
-background: rgb(60, 81, 131, 0.99);
+    background: rgb(60, 81, 131, 0.99);
 // background: linear-gradient(135deg, rgba(15,47,145,1) 0%, rgba(127,152,210,1) 66%);
     border-radius: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.news-alert:nth-child(1) {
+    margin-bottom:2vh;
+}
+
+.alert-message {
+    position:fixed;
+    z-index:999;
+    bottom:1%;
+    
+    right:2%;
+    .top {
+        color: #3def69;
+    }
+    .bottom {
+        color: #f6fc3a;
+    }
 }
 
 .modal {
@@ -60,6 +73,9 @@ background: rgb(60, 81, 131, 0.99);
         p {
             font-size: 0.8em;
             line-height: 2em;
+        }
+        p.text-p {
+            font-size: 0.9em;
         }
     }
     .close-modal {
@@ -772,6 +788,10 @@ background: linear-gradient(140deg, rgba(253,231,21,1) 0%, rgba(237,137,10,1) 10
         h4 {
             font-size: 2.5em;
         }
+    }
+
+    .alert-message {
+        left:2%;
     }
     .main {
         background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)),

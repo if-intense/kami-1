@@ -34,26 +34,15 @@
     crossorigin="anonymous"></script>
     
 </head>
-<script>
 
-  $(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 1000) {
-      $('.bottomMenu').fadeIn();
-    } else {
-      $('.bottomMenu').fadeOut();
-    }
-  });
-
-</script>
 
 <script>
   $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 1200) {
-      $('.register').fadeIn();
+    if (y >6600) {
+      $('.alert-message').fadeOut();
     } else {
-      $('.register').fadeOut();
+      $('.alert-message').fadeIn();
     }
   });
 </script>
@@ -71,10 +60,16 @@
     <a href="https://post.kamisma.com">エントリーはこちら</a>
     <p>2022年8月31日（水）まで</p>
   </div> -->
-  <div class="news-alert">
-    <a data-bs-toggle="modal" data-bs-target="#news">２回戦進出者発表！</a>
+  <div class="alert-message">
+    <div class="news-alert top">
+      <a data-bs-toggle="modal" data-bs-target="#news">２回戦進出者発表！</a>
+    </div>
+  
+    <div class="news-alert bottom">
+      <a data-bs-toggle="modal" data-bs-target="#news2">決勝戦進出者発表について</a>
+    </div>
+  
   </div>
-
 
 <!-- Modal -->
 <div class="modal fade" id="news" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,7 +86,8 @@
         <ul class="entrants">
           <li v-for="stylist in stylists">{{stylist.name}} <span v-if="stylist.team === true">※</span></li>
         </ul>
-        <p>※はチームエントリーの方々です。</p>
+        <p>〈氏名五十音順〉
+          <br>※はチームエントリーの方々です。</p>
         <div class="short-message">
           <p>多数のご応募、素晴らしい作品をありがとうございました。<br>
             一次審査結果は２回戦進出者の発表をもってかえさせていただきます。<br>
@@ -105,6 +101,34 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="news2" tabindex="-1" aria-labelledby="news2modal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="news2modal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body message" id="app">
+        <div class="title">
+          <h4><strong>決勝戦進出者発表について</strong></h4>
+        </div>
+        <p class="text-p">決勝戦進出者の方には、個別にメールにてご案内させていただきます。<br>
+          決勝戦へのエントリー方法について記載しております。<br>
+          エントリー期間終了後、11月初旬に公式サイト（当サイト）上で氏名・チーム名を発表いたします。</p>
+          
+          <p class="text-p"><strong><u>【決勝戦エントリー期間】</u></strong></p>
+          
+          <p class="text-p">2022年10月1日(土)～10月31日(月)　※締切日23時59分まで有効</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn close-modal" data-bs-dismiss="modal">閉じる</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="wrapper">
     <!-- <div class="bottomMenu" id="link-banner">
             <div class="container">
