@@ -66,7 +66,7 @@ var vm = new Vue ({
             {id: 62, name: "津田恵（GARDEN・東京都）", team: true},
             {id: 63, name: "堤大輔（LiLoinveve・大阪府）", team: false},
             {id: 64, name: "椿田圭史（JONATHAN LIVING STON・熊本県）", team: true},
-            {id: 65, name: "寺田彩果(LOAVE AOYAMA・東京都）", team: true},
+            {id: 65, name: "寺田彩果（LOAVE AOYAMA・東京都）", team: true},
             {id: 66, name: "土井新治（LOOPA by museum・兵庫県）", team: false},
             {id: 67, name: "土橋大毅（ABBEY2・東京都）", team: false},
             {id: 68, name: "冨永弘樹（Direct・鹿児島県）", team: false},
